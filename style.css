@@ -1,0 +1,95 @@
+body{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    font-family: 'Bungee', cursive;
+    margin: 0;
+}
+.header{
+    height:200px;
+    text-align:center;
+    line-height:200px;
+    background:#faf2f3;
+}
+.nav {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    height:50px;
+    background:#f3f2f1;
+    margin: 0;
+}
+.nav li{
+    float:left;
+    list-style:none;
+    font-family: 'Unica One', cursive;
+    width: 100%;
+    height: 100%;
+   
+}
+.nav li a{
+    display:block;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+ 
+.main{
+    height:560px;
+    background:#f8f9f6;
+}
+.nav.fixed{
+    position:fixed;
+    top:0;
+    z-index:1000;
+  }
+  .header{
+      background-image: url(https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?cs=srgb&dl=arch-bridge-clouds-814499.jpg&fm=jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+ 
+
+.nav li a:hover{ background-color: burlywood;}
+
+h2{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 4em;
+
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+#presentation, #competences, #diplomes, #experiences, #contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 25px;
+
+}
+.contact {
+    text-align: center;
+    list-style-type: none;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+.contact li {
+    margin: 20px;
+} 
+@media (max-width: 400px){
+    h2{
+        font-size: 43px;
+        font-family: 'Amaranth', sans-serif;
+    }
+    li {
+        font-size: 0.6em;
+}
+}
