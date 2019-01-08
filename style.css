@@ -1,104 +1,230 @@
-body{
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
-    font-family: 'Bungee', cursive;
-    margin: 0;
-    
-}
-.header{
-    text-align:center;
-    line-height:200px;
-    background:#faf2f3;
-}
-.nav {
-    padding-left: 0;
-    display: flex;
-    justify-content: space-around;
-    height:50px;
-    background:#f3f2f1;
-    margin: 0;
-}
-.nav li{
-    float:left;
-    list-style:none;
-    font-family: 'Unica One', cursive;
-    width: 100%;
-    height: 100%;
-   
-}
-.nav li a{
-    display:block;
-    text-decoration: none;
-    color: black;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
- 
-.main{
-    height:560px;
-    background:#f8f9f6;
-}
-.nav.fixed{
-    position:fixed;
-    top:0;
-    z-index:1000;
-  }
-  .header{
-      background-image: url(https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?cs=srgb&dl=arch-bridge-clouds-814499.jpg&fm=jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
- 
-
-.nav li a:hover{ background-color: burlywood;}
-
-h2{
-    font-family: 'Amaranth', sans-serif;
-    font-size: 4em;
-
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    
-}
-#presentation, #competences, #diplomes, #experiences, #contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 25px;
-
-}
-.contact {
-    text-align: center;
-    list-style-type: none;
-    margin-left:0px;
-    padding-left:0px;
-}
-
-.contact li {
-    margin: 20px;
-} 
-p{
-    line-height: 30px;
-}
-
-@media (max-width: 450px){
-   
-    h2{
-        font-size: 41px;
-        font-family: 'Amaranth', sans-serif;
-    };
-   li {
-        font-size: 0.6em;
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+/* CSS pour smartphone */
+@media screen and (max-width: 620px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-    
-
+    h2 {
+        font-family: 'Source Code Pro';
+        font-size: 3em;
+        font-weight: bold;
+    }
+    h3 {
+        text-decoration: underline;
+        font-family: 'Source Code Pro';
+        font-size: 2em;
+        font-weight: bold;
+    }
+    p, ol, ol li {
+        list-style: none;
+        line-height: 24px;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+        background: rgb(2,0,36);
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 20%, rgba(0,212,255,1) 100%);
+        background-size: contain;
+        background-attachment: fixed;
+        font-family: 'Source Code Pro';
+        overflow-x: hidden;
+    }
+    header {
+        display: none;
+    }
+    .imageheader {
+        height: 100%;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        height: 10%;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-left: 0;
+        list-style:none;
+        background:white;
+    }
+    .nav li {
+        width: 100%;
+        height: 100%;
+        font-family: 'Unica One', cursive;
+    }
+    .nav li a {
+        display:block;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .nav li a:hover { 
+        color: white;
+        background-color: black;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;   
+    }
+    #presentation, #competences, #diplomes, #experiences, #contact  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .ajuster {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+    #contact > .ajuster > ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        width: 100%;
+        height: 10%;
+        background:#f3f2f1;
+        transition: all 1s ease;
+    }
+    footer:hover {
+        background-color: black;
+        color: white;
+    }
 }
-
-
+/* CSS pour les PC */
+@media screen and (min-width: 620px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        font-family: 'Source Code Pro';
+        font-size: 3em;
+        font-weight: bold;
+    }
+    h3 {
+        text-decoration: underline;
+        font-family: 'Source Code Pro';
+        font-size: 2em;
+        font-weight: bold;
+    }
+    p, ol, ol li {
+        list-style: none;
+        line-height: 24px;
+    }
+    body {
+        height: 100vh;
+        width: 100vw;
+        background: rgb(2,0,36);
+        background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 20%, rgba(0,212,255,1) 100%);
+        background-size: contain;
+        background-attachment: fixed;
+        font-family: 'Source Code Pro';
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        height: 90%;
+    }
+    .imageheader {
+        height: 100%;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        height: 10%;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-left: 0;
+        list-style:none;
+        background:white;
+    }
+    .nav li {
+        width: 100%;
+        height: 100%;
+        font-family: 'Unica One', cursive;
+    }
+    .nav li a {
+        display:block;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transition: all 1s ease;
+    }
+    .nav li a:hover { 
+        color: white;
+        background-color: black;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;   
+    }
+    #presentation, #competences, #diplomes, #experiences, #contact  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .ajuster {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+    }
+    #contact > .ajuster > ol {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        width: 100%;
+        height: 10%;
+        background:#f3f2f1;
+        transition: all 1s ease;
+    }
+    footer:hover {
+        background-color: black;
+        color: white;
+    }
+}
