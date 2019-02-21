@@ -102,6 +102,10 @@ nav {
 #presentation p {
     margin-top: 1em;
 }
+.titremetier{
+    text-decoration: underline;
+    font-weight: bold;
+}
 .ajuster {
     display: flex;
     flex-direction: column;
